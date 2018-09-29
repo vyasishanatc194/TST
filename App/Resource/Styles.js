@@ -3,6 +3,17 @@ import Colors from "./Colors";
 
 const styles = StyleSheet.create({
   container: { flex: 1, position: "relative" },
+  card: {
+    backgroundColor: Colors.white,
+    borderRadius: 2,
+    shadowColor: Colors.black,
+    shadowOpacity: 0.3,
+    shadowRadius: 1,
+    shadowOffset: {
+      height: 1,
+      width: 0.3
+    }
+  },
   background: { height: "100%", width: "100%" },
   mainView: {
     position: "absolute",
@@ -47,7 +58,9 @@ const styles = StyleSheet.create({
   },
   TouchableOpacityView: {
     flex: 1
-  }
+  },
+  row:{flexDirection:'row'},
+  column:{flexDirection:'column'},
 });
 
 export default styles;
